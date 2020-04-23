@@ -1,4 +1,4 @@
-//XML UNDER THE HOOD TEST (W3 SCHOOLS)
+/*XML UNDER THE HOOD TEST (W3 SCHOOLS)
 if (window.XMLHttpRequest) {
   // code for modern browsers
   var info = new XMLHttpRequest();
