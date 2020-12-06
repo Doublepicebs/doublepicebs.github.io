@@ -1,71 +1,70 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Doublepicebs</title>
-  <!-- Halfmoon CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon-variables.min.css" rel="stylesheet" />
-  <!-- Halfmoon JS -->
-  <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Doublepicebs</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="page-wrapper">
-    <!-- Content wrapper -->
-    <div class="content-wrapper">
-      
-      
-      <h1>Doublepicebs</h1>
-      <h5> A nerdy guy who is passionate about code </h5>
-      
-      <br /><br />
-      
-      <h4>Who am I?</h4>
-      <p>I am a guy who loves code and games in general. #Bruh</p>
-      
-      <p class="hidden-message">Did you waste your internet on loading this useless webpage? What da hell?</p>
-      
-      <button onclick="alert('I am not gonna give you my email. This whole wepage is a joke. #SorryNotSorry ')" class="wf btn btn-primary">E-MAIL</button>
-      
-      <br /><br />
-      
-      <a class="hidden-message" onclick="alert('Bruh. You won. Here take a cookie as a reward: [ 🍪 ] ');">CLICK ME</a>
-   
-   
-      
+  
+  
+  <section id="banner">
+    
+    <h4>Hello<span>!</span> I am</h4>
+    <h1>Doublepicebs</h1>
+    <h4>The most boring guy ever<span>.</span></h4>
+    
+    <div id="scroll">
+      <!-- Icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="1rem" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+      </svg>
     </div>
-</div>
-<script>
-  halfmoon.toggleDarkMode();
-</script>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Playfair+Display&display=swap');
-
-  body {
-    font-family: 'Libre Baskerville', serif;
-  }
+    
+  </section>
   
-  .content-wrapper {
-    padding: 2rem;
-  }
+  <section>
+    
+    <h1 align="center">My Projects</h1>
+    <br /><br /><br />
+    
+    <div class="card">
+       <h3>Cold css</h3>
+       <p>A practically useless css "framework" based on shoelace css</p>
+       <img src="images/meme.jpg" alt="">
+       <p class="caption">I am lazier than uploading a link or the framework's logo</p>
+    </div>
+    
+    <div class="card">
+       <h3>Iwebscrapper</h3>
+       <p>It is <i>supposed</i> to scrap web content. However it does, but it can't bypass websites that can't be opened in iFrame.</p>
+       <img src="images/failure.jpg" alt="">
+       <p class="caption">Its a failure. What did you expect me to put?</p>
+    </div>
+    
+  </scetion>
   
-  h1,h2,h3,h4,h5,h6,h7 {
-    color: white;
-    font-family: 'Playfair Display', serif;
-  }
+  <section>
+    
+    <h1 align="center">FAQ</h1>
+    <br /><br /><br />
+    
+    <div class="group">
+      <h2>“Hold on.. Who are you?”</h2>
+      <p>I am a young guy who loves code and design. I suck and I know I suck.</p>
+    </div>
+    <div class="group">
+      <h2>“If you suck, why am I here”?</h2>
+      <p>I don't know. Why did you even waste your time and internet reading this useless portfolio? Come on. Save your eyes. GET OUT!</p>
+    </div>
+    <div class="group">
+      <h2>“Nah man, you're cool”</h2>
+      <p>No. I suck. Don't be such a hypocrite.</p>
+    </div>
+    
+  </section>
   
-  .hidden-message {
-    color: #262626 !important;
-  }
   
-  .wf {
-    width: 100%;
-  }
-  
-  :root {
-    --primary-color: #4B8EFF;
-  }
-</style>
 </body>
 </html>
