@@ -73,6 +73,11 @@ section:not(#banner) {
   padding: 2rem;
 }
 
+a {
+  color: #5695FF;
+  text-decoration-color: #2979ff;
+}
+
 .group {
   margin-bottom: 3rem;
 }
