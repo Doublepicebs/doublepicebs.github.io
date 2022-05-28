@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: black;
+  color: whitesmoke;
+  font-size: 0.95rem;
+}
+
+#banner {
+  background-color: black;
+  color: #eeee;
+  padding: 2rem;
+  padding-bottom: 0;
+  text-align: center;
+  font-weight: 800;
+  font-family: "Open Sans", sans-serif;
+}
+
+#banner h1 {
+  font-size: 2.5rem;
+  letter-spacing: 0.00001px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  /*text-decoration: underline;
+  text-decoration-style: wavy;*/
+}
+
+#banner h4 {
+  margin-top: 1.5rem;
+}
+
+#banner span {
+  color: #5695FF;
+}
+
+#banner h2, #banner h3, #banner h4 {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,h7 {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.caption {
+  text-align: center;
+  font-style: italic;
+  margin-top: 0.5rem;
+  color: #919191;
+  font-size: 0.75rem;
+}
+
+#scroll {
+  font-weight: 100;
+  margin-top: 25vh;
+  margin-bottom: 10rem;
+}
+
+section:not(#banner) {
+  padding: 2rem;
+}
+
+a {
+  color: #5695FF;
+  text-decoration-color: #2979ff;
+}
+
+.group {
+  margin-bottom: 3rem;
+}
+
+.card {
+  margin-bottom: 3rem;
+  padding: 1rem;
+  background-color: #1f1f1f;
+  border-radius: 1rem;
+}
+
+img {
+  border-radius: 1rem;
+  width: 100%;
+  object-fit: cover;
+  margin-top: 0.25rem;
+}

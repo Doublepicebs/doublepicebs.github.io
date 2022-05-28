@@ -1,71 +1,61 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta description="Doublepicebs' one and only website. Where the biceps grow.">
-    <title>Doublepicebs</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>doublepicebs</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   
+  <h4 id="introduction_up">Hello! I am</h4>
+  <h1 id="name">
+    Doublepicebs
+  </h1>
+  <h4 id="introduction_down">A high school student who writes code in his free time.</h4>
   
-  <section id="banner">
+  <nav class="content">
+    <a href="#" class="tab active">Home</a>
+    <a href="blog.html" class="tab">Blog</a>
+  </nav>
+  
+  <hr>
+  
+  <section class="content">
     
-    <h4>Hello<span>!</span> I am</h4>
-    <h1>Doublepicebs</h1>
-    <h4>The most boring guy ever<span>.</span></h4>
-    
-    <div id="scroll">
-      <!-- Icon -->
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="1rem" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-      </svg>
+    <div>
+      Have some fun, change the accent color: <input id="accent" value="wheat" type="text">
+      <a class="button" onclick="changeAccent()">apply</a>
     </div>
+    
+    <h3>About me</h3>
+    <p>
+      I am your average Egyptian high school nerd. I love programming, although I suck at it :)
+    </p>
+    <p>
+      I started programming in 2019.
+    </p>
+    <p>
+      Fun Fact: I don't have a PC. I can't afford it. This entire webpage and all my projects are made with <a href="https://spck.io">spck editor</a> and <a href="https://play.google.com/store/apps/details?id=tech.ula">UserLAnd</a>.
+    </p>
+    
+    <h3>Skills</h3>
+    <p>
+      I know some ruby, lua, css and js. I don't really like wroking with node.js, I try to keep everything as vanilla as possible.
+    </p>
+    
+    <h3>Projects</h3>
+    <p>
+      Currently, there is nothing worth showing. (◡ ω ◡)
+    </p>
     
   </section>
   
-  <section>
-    
-    <h1 align="center">My Projects</h1>
-    <br /><br /><br />
-    
-    <div class="card">
-       <h3>Cold css</h3>
-       <p>A practically useless css "framework" based on shoelace css</p>
-       <img src="images/meme.jpg" alt="">
-       <p class="caption">I am lazier than uploading a link or the framework's logo</p>
-    </div>
-    
-    <div class="card">
-       <h3>Iwebscrapper</h3>
-       <p>It is <i>supposed</i> to scrap web content. However it does, but it can't bypass websites that can't be opened in iFrame.</p>
-       <img src="images/failure.jpg" alt="">
-       <p class="caption">Its a failure. What did you expect me to put?</p>
-    </div>
-    
-  </scetion>
+  <footer class="content">
+    (c) Doublepicebs 2022
+  </footer>
   
-  <section>
-    
-    <h1 align="center">FAQ</h1>
-    <br /><br /><br />
-    
-    <div class="group">
-      <h2>“Hold on.. Who are you?”</h2>
-      <p>I am a young guy who loves code and design. I suck and I know I suck.</p>
-    </div>
-    <div class="group">
-      <h2>“If you suck, why am I here”?</h2>
-      <p>I don't know. Why did you even waste your time and internet reading this useless portfolio? Come on. Save your eyes. GET OUT!</p>
-    </div>
-    <div class="group">
-      <h2>“Nah man, you're cool”</h2>
-      <p>No. I suck. Don't be such a hypocrite.</p>
-    </div>
-    
-  </section>
-  
-  
+  <script src="main.js"></script>
 </body>
 </html>

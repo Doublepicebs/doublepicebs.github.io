@@ -1,4 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap');
+/**
+using Doublepicebs VARONITE design system.
+**/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Consolas&display=swap');
+
+:root {
+  --a: wheat;
+}
 
 * {
   padding: 0;
@@ -7,91 +16,148 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
-  background-color: black;
-  color: whitesmoke;
-  font-size: 0.95rem;
+  color: #D0D2DE;
+  background-color: #0F0F0F;
+  font-family: "Consolas",monospace;
 }
 
-#banner {
-  background-color: black;
-  color: #eeee;
-  padding: 2rem;
-  padding-bottom: 0;
-  text-align: center;
-  font-weight: 800;
-  font-family: "Open Sans", sans-serif;
+#introduction_up {
+  padding-left: 1.3rem;
+  padding-top: 1rem;
 }
 
-#banner h1 {
-  font-size: 2.5rem;
-  letter-spacing: 0.00001px;
+#name {
+  margin-top: 10px;
+  padding-left: .9rem;
   color: white;
-  font-family: "Poppins", sans-serif;
-  /*text-decoration: underline;
-  text-decoration-style: wavy;*/
+  text-shadow: 2px 2px 45px var(--a);
 }
 
-#banner h4 {
-  margin-top: 1.5rem;
-}
-
-#banner span {
-  color: #5695FF;
-}
-
-#banner h2, #banner h3, #banner h4 {
-  font-family: "Open Sans", sans-serif;
-}
-
-h1,h2,h3,h4,h5,h6,h7 {
-  padding: 0;
-  margin: 0;
-  font-family: "Poppins", sans-serif;
-  color: white;
-}
-
-p {
-  margin-bottom: 1rem;
-}
-
-.caption {
-  text-align: center;
-  font-style: italic;
-  margin-top: 0.5rem;
-  color: #919191;
-  font-size: 0.75rem;
-}
-
-#scroll {
-  font-weight: 100;
-  margin-top: 25vh;
-  margin-bottom: 10rem;
-}
-
-section:not(#banner) {
-  padding: 2rem;
-}
-
-a {
-  color: #5695FF;
-  text-decoration-color: #2979ff;
-}
-
-.group {
+#introduction_down {
+  padding-left: 1.3rem;
   margin-bottom: 3rem;
+}
+
+.content {
+  padding: 1.5rem;
+}
+
+.button {
+  outline: none;
+  background-color: #292929;
+  padding: .4rem;
+  border-radius: 3px;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.button:hover {
+  text-shadow: none;
+  border-style: dashed;
+  border-color: var(--wheat);
+}
+
+.tab {
+  color: white;
+  text-decoration: none;
+}
+
+.tab.active {
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-color: var(--a);
+}
+
+.tab.active:hover, .tab.active:focus {
+  text-shadow: none;
+}
+
+.tab:not(.active):hover, .tab:not(.active):focus {
+  text-shadow: none;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-decoration-color: var(--a);
 }
 
 .card {
-  margin-bottom: 3rem;
+  background-color: #1F1F1F;
+  margin-top: 1rem;
   padding: 1rem;
-  background-color: #1f1f1f;
-  border-radius: 1rem;
+  border-top-right-radius: 150px;
+  border-bottom-left-radius: 50px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--a);
+  border-left-style: solid;
+  border-left-color: var(--a);
 }
 
-img {
-  border-radius: 1rem;
-  width: 100%;
-  object-fit: cover;
-  margin-top: 0.25rem;
+.card > h1, .card > h2, .card > h3 {
+  margin-top: 0;
+}
+
+.card > p:not(.date) {
+  padding-top: .3rem;
+}
+
+.card > .date {
+  padding-top: .8rem;
+  color: #878787;
+}
+
+footer {
+  background-color: black;
+}
+
+
+hr {
+  border-color: #292929;
+}
+
+h1 {
+  color: white;
+}
+
+h1,h2,h3 {
+  margin-top: 2rem;
+  margin-bottom: .2rem;
+}
+
+h4,h5,h6,h7 {
+  font-weight: 300;
+}
+
+a {
+  color: white;
+  text-decoration-color: var(--a);
+  text-decoration-style: dotted;
+  /*text-shadow: 1px 1px 25px var(--a);*/
+}
+
+a:hover, a:focus {
+  text-shadow: 1px 1px 10px var(--a);
+  text-decoration-style: dashed;
+}
+
+a.card-link {
+  text-decoration: none;
+  text-shadow: none;
+}
+
+a.card-link:hover > .card, a.card-link:focus > .card {
+  border-top-style: solid;
+  border-right-style: solid;
+  border-top-color: var(--a);
+  border-right-color: var(--a);
+}
+
+input {
+  padding: .3rem;
+  background-color: #292929;
+  color: inherit;
+  border-color: transparent;
+  border-radius: 3px;
+  outline-color: var(--a);
+  outline-width: .2px;
+  outline-offset: 3px;
+  font-family: inherit;
 }
