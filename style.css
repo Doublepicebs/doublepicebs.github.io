@@ -141,6 +141,18 @@ a:hover, a:focus {
 a.card-link {
   text-decoration: none;
   text-shadow: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  /* stop that annoying blue highlight in Chrome */
+}
+
+@keyframes grow-border {
+  to {
+  border-bottom-width: 5px;
+  border-left-width: 3px;
+  margin-bottom: -5px; /* prevent content push on border growth */
+  }
 }
 
 a.card-link:hover > .card, a.card-link:focus > .card {
@@ -148,6 +160,11 @@ a.card-link:hover > .card, a.card-link:focus > .card {
   border-right-style: solid;
   border-top-color: var(--a);
   border-right-color: var(--a);
+  animation-name: grow-border;
+  animation-duration: .3s;
+  animation-timing-function: ease-in-out;
+  /* keep look before & after focus/hover */
+  animation-fill-mode: both;
 }
 
 input {
